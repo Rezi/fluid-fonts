@@ -1,0 +1,17 @@
+<div class="slide-page">
+  <h1 class="title">SCSS helper</h1>
+  <div class="content">
+    <pre class="fluid-type code-block">
+      @function between($from, $to, $fromWidth, $toWidth) {
+        $slope: ($to - $from) / ($toWidth - $fromWidth);
+        $base: $from - $slope * $fromWidth;
+
+        @return calc(#{$base} + #{100vw * $slope});
+      }
+
+      @media (min-width: $small) and (max-width: $large) {
+        padding: between(20px, 100px, $small, $large);
+      }
+    </pre>
+  </div>
+</div>

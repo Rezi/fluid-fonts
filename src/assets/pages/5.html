@@ -1,0 +1,22 @@
+<div class="slide-page">
+  <h1 class="title">Fluid fonts</h1>
+  <div class="content">
+    <pre class="fluid-type code-block">
+.fluid-type {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 320px) {
+  .fluid-type {
+    font-size: calc(14px + 8 * ((100vw - 320px) / 960));
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .fluid-type {
+    font-size: 22px;
+  }
+}
+    </pre>
+  </div>
+</div>

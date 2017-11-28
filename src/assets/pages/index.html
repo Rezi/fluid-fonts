@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 10px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;
+
+        }
+
+        body {
+            margin: 0;
+            font-size: 1.4rem;
+        }
+
+        @media screen and (min-width: 320px) {
+            html {
+                font-size: calc(10px + 5 * ((100vw - 320px) / 960));
+            }
+        }
+
+        @media screen and (min-width: 1280px) {
+            html {
+                font-size: 15px;
+            }
+        }
+
+        .box {
+            margin: 0 auto;
+            max-width: 80rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            padding: 2rem 0;
+
+        }
+
+        .logo {
+
+            flex: 1 0 auto;
+            flex-wrap: wrap;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #eee;
+            font-size: 2rem;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+
+
+        .cols {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 10 1 30rem;
+
+        }
+
+        .col {
+            flex: 1 0 20rem;
+            padding: 0 1rem 0.5rem 1rem;
+        }
+
+        .placeholder-text {
+            line-height: 1.5;
+        }
+    </style>
+    <div class="box">
+        <div class="logo">
+            LOGO
+
+        </div>
+        <div class="cols">
+            <div class="col">
+                <span class="placeholder-text">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                    penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                    eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+                    vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+                </span>
+            </div>
+            <div class="col">
+                <span class="placeholder-text">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                    penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                    eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+                    vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
