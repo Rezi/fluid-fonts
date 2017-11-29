@@ -1,0 +1,34 @@
+<div class="slide-page">
+
+  <div class="content">
+    <h2 class="title">Setting variable</h2>
+    <div class="code-block-wrap">
+
+
+      <pre class="fluid-type code-block">
+element {
+  --main-bg-color: brown;
+}
+    </pre>
+    </div>
+
+    <h2 class="title">Using variable</h2>
+    <div class="code-block-wrap">
+      <pre class="fluid-type code-block">
+element {
+  background-color: var(--main-bg-color);
+}
+    </pre>
+    </div>
+
+    <h2 class="title">Variable fallbacks</h2>
+    <div class="code-block-wrap">
+      <pre class="fluid-type code-block">
+.fallback {
+  background-color: var(--my-var, var(--my-background, pink));
+  /* pink if my-var and --my-background are not defined */
+}
+    </pre>
+    </div>
+  </div>
+</div>

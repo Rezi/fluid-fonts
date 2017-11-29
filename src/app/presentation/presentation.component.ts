@@ -30,7 +30,7 @@ export class PresentationComponent implements OnInit {
   ) {}
 
   public pageContent = '';
-  private lastSlide = 12;
+  private lastSlide = 19;
   private activeSlide = 1;
 
   @HostListener('window:keyup', ['$event'])

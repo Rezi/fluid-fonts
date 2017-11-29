@@ -1,10 +1,7 @@
 export const pageStyles = {
   1: ``,
   2: ``,
-  3: `* {
-    box-sizing: border-box;
-}
-
+  3: `
 html {
     font-size: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;
@@ -100,23 +97,7 @@ body {
 }
 `,
   4: ``,
-  5: `
-
-  .fluid-type {
-    font-size: 14px;
-  }
-
-  @media screen and (min-width: 320px) {
-    .fluid-type {
-      font-size: calc(14px + 8 * ((100vw - 320px) / 960));
-    }
-  }
-
-  @media screen and (min-width: 1280px) {
-    .fluid-type {
-      font-size: 22px;
-    }
-  }`,
+  5: ``,
   6: `
 * {
   box-sizing: border-box;
@@ -226,23 +207,7 @@ body {
   padding: 0.5rem;
 }`,
   7: ``,
-  8: `
-  
-    .fluid-type {
-      font-size: 14px;
-    }
-  
-    @media screen and (min-width: 320px) {
-      .fluid-type {
-        font-size: calc(14px + 8 * ((100vw - 320px) / 960));
-      }
-    }
-  
-    @media screen and (min-width: 1280px) {
-      .fluid-type {
-        font-size: 22px;
-      }
-    }`,
+  8: ``,
   9: `body {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1842,37 +1807,22 @@ a {
  }
 }
 `,
-  11: `
-.fluid-type {
-  font-size: 14px;
-}
-
-@media screen and (min-width: 320px) {
-  .fluid-type {
-    font-size: calc(14px + 8 * ((100vw - 320px) / 960));
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .fluid-type {
-    font-size: 22px;
-  }
-}`,
+  11: ``,
   12: `/**
 * Computes a CSS calc function that betweens a value from
 * A to B over A-viewport-width to B-viewport-width.
 * Requires a media query to cap the value at B.
 */
-:root {
+html {
  font-size: 10px;
 }
 @media (min-width: 425px) {
- :root {
+  html {
    font-size: calc(4.32387px + 1.33556vw);
  }
 }
 @media (min-width: 1024px) {
- :root {
+  html {
    font-size: 18px;
  }
 }
@@ -1978,5 +1928,11 @@ br {
 .right {
  margin-left: auto;
 }
-`
+`,
+  13: `
+  body {
+    background: white;
+  }`,
+  14: ``,
+  15: ``
 };

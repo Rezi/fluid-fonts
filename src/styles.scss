@@ -133,6 +133,10 @@ table {
 $main-color: #3a908a;
 $color-block-bg: #89c1bd;
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   min-height: 100%;
@@ -140,6 +144,11 @@ body {
   margin: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial;
+}
+
+img {
+  max-width: 100%;
+  padding: 1rem;
 }
 
 .slide-page {
@@ -161,6 +170,7 @@ body {
     flex: 1 0 auto;
     font-size: 2rem;
     display: flex;
+    padding: 1rem 0;
     align-items: center;
     flex-direction: column;
     justify-content: flex-end;
@@ -174,8 +184,40 @@ body {
     justify-content: space-around;
   }
 }
+.code-block-wrap {
+  flex-grow: 10;
+}
 
 .code-block {
   background-color: $color-block-bg;
-  padding: 20px;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+.prsentation-list {
+  font-size: 1.5rem;
+  background-color: $color-block-bg;
+  padding: 1rem;
+  list-style: disc;
+
+  li {
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.fluid-type {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 320px) {
+  .fluid-type {
+    font-size: calc(14px + 8 * ((100vw - 320px) / 960));
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .fluid-type {
+    font-size: 22px;
+  }
 }
