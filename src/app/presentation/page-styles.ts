@@ -1827,21 +1827,8 @@ html {
  }
 }
 
-html, body {
- min-height: 100vh;
-}
-
-body {
+.presentation {
  background: #89c1bd;
- display: -webkit-box;
- display: -ms-flexbox;
- display: flex;
- -webkit-box-pack: center;
-     -ms-flex-pack: center;
-         justify-content: center;
- -webkit-box-align: center;
-     -ms-flex-align: center;
-         align-items: center;
 }
 
 .Card {
@@ -1929,10 +1916,7 @@ br {
  margin-left: auto;
 }
 `,
-  13: `
-  body {
-    background: white;
-  }`,
+  13: ``,
   14: ``,
   15: ``
 };
