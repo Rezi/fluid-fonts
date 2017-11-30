@@ -1879,9 +1879,13 @@ html {
 
 .Button {
  background: #a9c3d2;
- height: 2.25rem;
  width: 50%;
  border-radius: 6px;
+ font-size: 26px;
+ display: flex;
+ justify-content: center;
+ padding: 0.3rem;
+ color: #fff;
 }
 .Button--cta {
  background: #3a908a;
@@ -1915,6 +1919,8 @@ br {
 .right {
  margin-left: auto;
 }
+
+.text-block { padding-bottom: 0.5rem;}
 `,
   13: ``,
   14: ``,
